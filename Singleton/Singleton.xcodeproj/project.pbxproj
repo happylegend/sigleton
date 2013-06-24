@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF572D7F1778245B002B71CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF572D7E1778245B002B71CC /* UIKit.framework */; };
+		CF572D811778245B002B71CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF572D801778245B002B71CC /* Foundation.framework */; };
+		CF572D831778245B002B71CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF572D821778245B002B71CC /* CoreGraphics.framework */; };
+		CF572D891778245B002B71CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF572D871778245B002B71CC /* InfoPlist.strings */; };
+		CF572D8B1778245B002B71CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF572D8A1778245B002B71CC /* main.m */; };
+		CF572D8F1778245B002B71CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF572D8E1778245B002B71CC /* AppDelegate.m */; };
+		CF572D911778245B002B71CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF572D901778245B002B71CC /* Default.png */; };
+		CF572D931778245B002B71CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF572D921778245B002B71CC /* Default@2x.png */; };
+		CF572D951778245B002B71CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF572D941778245B002B71CC /* Default-568h@2x.png */; };
+		CF572D9D17782475002B71CC /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF572D9C17782475002B71CC /* MySingleton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF572D7B1778245B002B71CC /* Singleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Singleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF572D7E1778245B002B71CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF572D801778245B002B71CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF572D821778245B002B71CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF572D861778245B002B71CC /* Singleton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Singleton-Info.plist"; sourceTree = "<group>"; };
+		CF572D881778245B002B71CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF572D8A1778245B002B71CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF572D8C1778245B002B71CC /* Singleton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Singleton-Prefix.pch"; sourceTree = "<group>"; };
+		CF572D8D1778245B002B71CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF572D8E1778245B002B71CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF572D901778245B002B71CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF572D921778245B002B71CC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF572D941778245B002B71CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF572D9B17782475002B71CC /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
+		CF572D9C17782475002B71CC /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingleton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF572D781778245B002B71CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572D7F1778245B002B71CC /* UIKit.framework in Frameworks */,
+				CF572D811778245B002B71CC /* Foundation.framework in Frameworks */,
+				CF572D831778245B002B71CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF572D721778245B002B71CC = {
+			isa = PBXGroup;
+			children = (
+				CF572D841778245B002B71CC /* Singleton */,
+				CF572D7D1778245B002B71CC /* Frameworks */,
+				CF572D7C1778245B002B71CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF572D7C1778245B002B71CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF572D7B1778245B002B71CC /* Singleton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF572D7D1778245B002B71CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF572D7E1778245B002B71CC /* UIKit.framework */,
+				CF572D801778245B002B71CC /* Foundation.framework */,
+				CF572D821778245B002B71CC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF572D841778245B002B71CC /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CF572D8D1778245B002B71CC /* AppDelegate.h */,
+				CF572D8E1778245B002B71CC /* AppDelegate.m */,
+				CF572D9B17782475002B71CC /* MySingleton.h */,
+				CF572D9C17782475002B71CC /* MySingleton.m */,
+				CF572D851778245B002B71CC /* Supporting Files */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		CF572D851778245B002B71CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF572D861778245B002B71CC /* Singleton-Info.plist */,
+				CF572D871778245B002B71CC /* InfoPlist.strings */,
+				CF572D8A1778245B002B71CC /* main.m */,
+				CF572D8C1778245B002B71CC /* Singleton-Prefix.pch */,
+				CF572D901778245B002B71CC /* Default.png */,
+				CF572D921778245B002B71CC /* Default@2x.png */,
+				CF572D941778245B002B71CC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF572D7A1778245B002B71CC /* Singleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF572D981778245B002B71CC /* Build configuration list for PBXNativeTarget "Singleton" */;
+			buildPhases = (
+				CF572D771778245B002B71CC /* Sources */,
+				CF572D781778245B002B71CC /* Frameworks */,
+				CF572D791778245B002B71CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Singleton;
+			productName = Singleton;
+			productReference = CF572D7B1778245B002B71CC /* Singleton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF572D731778245B002B71CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = qsji;
+			};
+			buildConfigurationList = CF572D761778245B002B71CC /* Build configuration list for PBXProject "Singleton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF572D721778245B002B71CC;
+			productRefGroup = CF572D7C1778245B002B71CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF572D7A1778245B002B71CC /* Singleton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF572D791778245B002B71CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572D891778245B002B71CC /* InfoPlist.strings in Resources */,
+				CF572D911778245B002B71CC /* Default.png in Resources */,
+				CF572D931778245B002B71CC /* Default@2x.png in Resources */,
+				CF572D951778245B002B71CC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF572D771778245B002B71CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572D8B1778245B002B71CC /* main.m in Sources */,
+				CF572D8F1778245B002B71CC /* AppDelegate.m in Sources */,
+				CF572D9D17782475002B71CC /* MySingleton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF572D871778245B002B71CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF572D881778245B002B71CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF572D961778245B002B71CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF572D971778245B002B71CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF572D991778245B002B71CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Singleton/Singleton-Prefix.pch";
+				INFOPLIST_FILE = "Singleton/Singleton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF572D9A1778245B002B71CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Singleton/Singleton-Prefix.pch";
+				INFOPLIST_FILE = "Singleton/Singleton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF572D761778245B002B71CC /* Build configuration list for PBXProject "Singleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF572D961778245B002B71CC /* Debug */,
+				CF572D971778245B002B71CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF572D981778245B002B71CC /* Build configuration list for PBXNativeTarget "Singleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF572D991778245B002B71CC /* Debug */,
+				CF572D9A1778245B002B71CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF572D731778245B002B71CC /* Project object */;
+}
