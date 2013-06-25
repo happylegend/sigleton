@@ -22,6 +22,16 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    MySingleton *singleton1 = [MySingleton getSingleton];
+    NSLog(@"singleton1的地址是：%p", singleton1);
+    NSLog(@"retainCount is: %d", [singleton1 retainCount]);
+
+    
+    MySingleton *singleton2 = [MySingleton getSingleton];
+    NSLog(@"singleton2的地址是：%p", singleton2);
+    NSLog(@"retainCount is: %d", [singleton2 retainCount]);
+    
     return YES;
 }
 

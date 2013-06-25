@@ -12,6 +12,7 @@ static MySingleton *singleton = nil;
 
 @implementation MySingleton
 
+
 +(MySingleton *)getSingleton
 {
     @synchronized(self)            //为了确保多线程情况下，仍然保证实体的唯一
@@ -22,6 +23,7 @@ static MySingleton *singleton = nil;
     }
     return singleton;
 }
+
 
 +(id)allocWithZone:(NSZone *)zone
 {
@@ -35,29 +37,42 @@ static MySingleton *singleton = nil;
     return nil;
 }
 
+
 -(id)copyWithZone:(NSZone *)zone
 {
     return self;                 //确保copy对象也唯一
 }
+
 
 -(id)retain
 {
     return  self;                //确保计数唯一
 }
 
+
 -(unsigned)retainCount
 {
-    return UINT_MAX;             //装逼用的，这样打印出来的计数永远都是-1
+    return UINT_MAX;             //装逼用的，这样打印出来的计数永远为-1
 }
+
 
 -(id)autorelease
 {
-    return self;                 //确保计数唯一
+    return self;                 //返回单例本身，确保计数唯一
 }
 
+
+//不做任何处理
 -(oneway void)release
 {
-    //重写计数释放方法
+    
+}
+
+
+-(void)dealloc
+{
+    //做一些收尾工作......
+    [super dealloc];
 }
 
 @end

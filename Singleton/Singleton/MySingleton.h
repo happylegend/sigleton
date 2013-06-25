@@ -13,4 +13,5 @@
 
 +(MySingleton *)getSingleton;
 
+
 @end
