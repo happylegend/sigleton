@@ -65,7 +65,7 @@ static MySingleton *singleton = nil;
 //不做任何处理
 -(oneway void)release
 {
-    
+    //单例没有进行释放，可以做一些其他的操作
 }
 
 

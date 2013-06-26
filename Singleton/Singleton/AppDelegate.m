@@ -26,7 +26,6 @@
     MySingleton *singleton1 = [MySingleton getSingleton];
     NSLog(@"singleton1的地址是：%p", singleton1);
     NSLog(@"retainCount is: %d", [singleton1 retainCount]);
-
     
     MySingleton *singleton2 = [MySingleton getSingleton];
     NSLog(@"singleton2的地址是：%p", singleton2);
